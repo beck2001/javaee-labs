@@ -38,11 +38,11 @@ public class GroupService {
                 .collect(Collectors.toList());
     }
 
-//    public GroupInSocialNetwork deleteGroup(GroupInSocialNetwork groupInSocialNetwork) {
-//        if (!entityManager.contains(groupInSocialNetwork)) {
-//            groupInSocialNetwork = entityManager.merge(groupInSocialNetwork);
-//        }
-//        entityManager.remove(groupInSocialNetwork);
-//        return groupInSocialNetwork;
-//    }
+    public GroupInSocialNetwork deleteGroup(GroupInSocialNetwork groupInSocialNetwork) {
+        if (!entityManager.contains(groupInSocialNetwork)) {
+            groupInSocialNetwork = entityManager.merge(groupInSocialNetwork);
+        }
+        entityManager.remove(groupInSocialNetwork);
+        return groupInSocialNetwork;
+    }
 }

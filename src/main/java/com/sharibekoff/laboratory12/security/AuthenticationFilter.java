@@ -8,11 +8,10 @@ import javax.ws.rs.container.ResourceInfo;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
-import javax.ws.rs.ext.Provider;
 import java.lang.reflect.Method;
 import java.util.*;
 
-@Provider
+//@Provider
 public class AuthenticationFilter implements javax.ws.rs.container.ContainerRequestFilter {
 
     @Context

@@ -39,11 +39,11 @@ public class UserService {
                 .collect(Collectors.toList());
     }
 
-//    public User deleteUser(User user) {
-//        if (!entityManager.contains(user)) {
-//            user = entityManager.merge(user);
-//        }
-//        entityManager.remove(user);
-//        return user;
-//    }
+    public User deleteUser(User user) {
+        if (!entityManager.contains(user)) {
+            user = entityManager.merge(user);
+        }
+        entityManager.remove(user);
+        return user;
+    }
 }
